@@ -50,6 +50,7 @@ while True:
         try:
             threading.Thread(target = thread_starter).start()
             proxy_counter += 1
+            time.sleep(30)
         except:
             pass
         if len(proxies) <= proxy_counter: #Loops through proxy file
